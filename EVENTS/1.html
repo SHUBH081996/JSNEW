@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+
+   <!-- <div id="container">
+  <form id="loginForm">
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+  </form>
+</div> -->
+
+</body>
+<script>
+// document.getElementById('owl').onclick = function(){
+//     alert("owl clicked")
+// }
+
+// document.getElementById('owl').addEventListener('click', function(event){
+// console.log(event);
+// alert("owl clicked again")
+// },false)
+
+
+// document.getElementById('images').addEventListener('click', function(event){
+   
+// console.log("clicked inside ul");
+// },false)
+
+// document.getElementById('owl').addEventListener('click', function(event){
+//      event.stopPropagation();
+// console.log("clicked inside owl");
+
+// },false)
+
+// document.getElementById('container').addEventListener("keydown" , function(event){
+//     console.log("containeer received key", event.key);
+    
+// });
+
+// document.getElementById("loginForm").addEventListener("keydown", function (event) {
+//   console.log("Form received key:", event.key);
+
+ 
+//   if (event.key === "Enter") {
+//     event.preventDefault(); // Prevent form submission
+//     event.stopPropagation(); // Stop bubbling to container
+//     console.log("Enter key handled at form level");
+//   }
+// });
+
+// // Input-level listener
+// // document.getElementById("username").addEventListener("keydown", function (event) {
+// //   console.log("Username input received key:", event.key);
+// // });
+
+
+// document.getElementById("username").addEventListener("keydown", function (event) {
+//   event.s
+//   if(event.key == 's'){
+//      console.log("Username input received key: S ", event.key);
+//   }
+//    console.log("Username input received key:", event.key);
+// });
+
+//attachEvent()
+//JQUERY - oneventListerner()
+
+// document.getElementById('google').addEventListener('click',function(event){
+//   console.log("google clicked");
+//   event.stopPropagation();
+//   event.preventDefault();
+// })fgdhfg
+
+document.querySelector('#images').addEventListener('click', function(event){
+  console.log(event.target.parentNode);
+
+  let element = event.target.parentNode
+
+  element.remove();
+  element.parentNode.remoeveChild();
+
+})
+
+
+
+
+
+
+
+</script>
+</html>

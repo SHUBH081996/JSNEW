@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>COFFEE AND CODDING</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+//    const sayPraful = setTimeout( function(){
+//         console.log("praful sor");
+        
+//     },2000);
+
+    // setInterval(function(){
+    //     console.log("interval");
+        
+    // },2000)
+
+
+    const declaration = function(){
+        document.querySelector('h1').innerHTML = "Best JS Series"
+    }
+
+    const setting = setTimeout(declaration,4000)
+
+    //clearTimeout(setting)
+
+    document.querySelector('#stop').addEventListener('click',function(event){
+        clearTimeout(setting)
+        console.log("change me");
+
+    })
+
+
+
+</script>
+</html>
